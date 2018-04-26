@@ -1,0 +1,875 @@
+###############################################################################
+#
+# IAR ELF Linker V8.11.1.13263/W32 for ARM                30/Apr/2017  22:20:04
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Exe\ucOS3_TM4C123.out
+#    Map file     =  
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\List\ucOS3_TM4C123.map
+#    Command line =  
+#        -f C:\Users\bicbrv\AppData\Local\Temp\EWD26.tmp
+#        (C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\adc.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\bsp.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\bsp_int.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\bsp_led.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\bsp_sys.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\can.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\comp.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\core_main.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\cpu.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\cpu_a.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\cpu_bsp.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\cpu_c.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\cpu_core.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\eeprom.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\flash.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\fpu.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\gpio.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\hibernate.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\i2c.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\interrupt.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\led.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\lib_ascii.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\lib_math.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\lib_mem.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\lib_mem_a.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\lib_str.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\mpu.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_app_hooks.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_cfg_app.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_core.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_cpu_a.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_cpu_c.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_dbg.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_flag.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_int.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_mem.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_msg.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_mutex.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_pend_multi.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_prio.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_q.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_sem.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_stat.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_task.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_tick.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_time.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_tmr.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\os_var.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\pwm.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\qei.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\ssi.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\startup_ewarm.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\sw_crc.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\sysctl.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\sysexc.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\systick.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\timer.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\uart.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\udma.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\usb.o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj\watchdog.o
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb -o
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Exe\ucOS3_TM4C123.out
+#        --map
+#        C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\List\ucOS3_TM4C123.map
+#        --config "D:\Applications\IAR Systems\Embedded Workbench
+#        8.0\arm\config\linker\TexasInstruments\TM4C123GH6.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0003ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20007fff] { rw, block CSTACK, block HEAP };
+do not initialize { section .noinit };
+
+  Section          Kind        Address    Size  Object
+  -------          ----        -------    ----  ------
+"A0":                                    0x26c
+  .intvec          const    0x00000000   0x26c  startup_ewarm.o [1]
+                          - 0x0000026c   0x26c
+
+"P1":                                   0x3ce8
+  .text            ro code  0x0000026c   0xa74  os_core.o [1]
+  .text            ro code  0x00000ce0   0x384  os_cpu_c.o [1]
+  .text            ro code  0x00001064    0xa4  os_prio.o [1]
+  .text            ro code  0x00001108    0x1c  os_flag.o [1]
+  .text            ro code  0x00001124    0x1c  os_mem.o [1]
+  .text            ro code  0x00001140    0xb4  os_msg.o [1]
+  .text            ro code  0x000011f4   0x424  os_mutex.o [1]
+  .text            ro code  0x00001618    0x1c  os_q.o [1]
+  .text            ro code  0x00001634    0x1c  os_sem.o [1]
+  .text            ro code  0x00001650   0x8c8  os_task.o [1]
+  .text            ro code  0x00001f18   0x488  os_tick.o [1]
+  .text            ro code  0x000023a0   0x558  os_stat.o [1]
+  .text            ro code  0x000028f8   0x228  os_tmr.o [1]
+  .text            ro code  0x00002b20   0x22c  os_dbg.o [1]
+  .text            ro code  0x00002d4c    0xb8  os_cfg_app.o [1]
+  CODE             ro code  0x00002e04   0x10c  os_cpu_a.o [1]
+  .text            ro code  0x00002f10    0x44  cpu_bsp.o [1]
+  .text            ro code  0x00002f54   0x2a0  os_time.o [1]
+  CODE             ro code  0x000031f4    0x34  cpu_a.o [1]
+  .text            ro code  0x00003228    0x18  bsp_sys.o [1]
+  .text            ro code  0x00003240    0x4c  cpu_core.o [1]
+  .text            ro code  0x0000328c   0x284  sysctl.o [1]
+  .text            ro code  0x00003510    0xec  lib_mem.o [1]
+  .text            ro code  0x000035fc   0x2d0  bsp_int.o [1]
+  .text            ro code  0x000038cc   0x19a  gpio.o [1]
+  .rodata          const    0x00003a66     0x2  os_cfg_app.o [1]
+  .text            ro code  0x00003a68    0xd6  core_main.o [1]
+  .text            ro code  0x00003b3e    0x10  bsp.o [1]
+  .rodata          const    0x00003b4e     0x2  os_dbg.o [1]
+  .text            ro code  0x00003b50    0x24  led.o [1]
+  .rodata          const    0x00003b74    0x6c  sysctl.o [1]
+  .text            ro code  0x00003be0    0x40  zero_init3.o [5]
+  .text            ro code  0x00003c20    0x3c  startup_ewarm.o [1]
+  .text            ro code  0x00003c5c     0xc  cstartup_M.o [5]
+  .text            ro code  0x00003c68    0x22  fpinit_M.o [4]
+  .rodata          const    0x00003c8a     0x2  os_dbg.o [1]
+  .text            ro code  0x00003c8c    0x1a  cmain.o [5]
+  .text            ro code  0x00003ca6     0x4  low_level_init.o [3]
+  .rodata          const    0x00003caa     0x2  os_dbg.o [1]
+  .text            ro code  0x00003cac    0x28  data_init.o [5]
+  .text            ro code  0x00003cd4     0x4  exit.o [3]
+  .text            ro code  0x00003cd8     0xa  cexit.o [5]
+  .rodata          const    0x00003ce2     0x2  os_dbg.o [1]
+  .text            ro code  0x00003ce4    0x14  exit.o [6]
+  .rodata          const    0x00003cf8    0x30  os_dbg.o [1]
+  .rodata          const    0x00003d28    0x30  os_dbg.o [1]
+  .rodata          const    0x00003d58    0x2c  os_dbg.o [1]
+  .rodata          const    0x00003d84    0x28  os_dbg.o [1]
+  .rodata          const    0x00003dac    0x28  os_dbg.o [1]
+  .iar.init_table  const    0x00003dd4    0x10  - Linker created -
+  .rodata          const    0x00003de4    0x20  os_dbg.o [1]
+  .rodata          const    0x00003e04    0x18  os_tmr.o [1]
+  .rodata          const    0x00003e1c    0x14  os_core.o [1]
+  .rodata          const    0x00003e30    0x14  os_stat.o [1]
+  .rodata          const    0x00003e44    0x14  os_tick.o [1]
+  .rodata          const    0x00003e58    0x10  core_main.o [1]
+  .rodata          const    0x00003e68    0x10  os_tmr.o [1]
+  .rodata          const    0x00003e78     0xc  os_core.o [1]
+  .rodata          const    0x00003e84     0x8  os_core.o [1]
+  .rodata          const    0x00003e8c     0x8  os_task.o [1]
+  .rodata          const    0x00003e94     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003e98     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003e9c     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ea0     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ea4     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ea8     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003eac     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003eb0     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003eb4     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003eb8     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ebc     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ec0     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ec4     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ec8     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ecc     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ed0     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ed4     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ed8     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003edc     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ee0     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ee4     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ee8     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003eec     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ef0     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ef4     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003ef8     0x4  os_cfg_app.o [1]
+  .rodata          const    0x00003efc     0x4  os_dbg.o [1]
+  .rodata          const    0x00003f00     0x4  os_dbg.o [1]
+  .rodata          const    0x00003f04     0x4  os_dbg.o [1]
+  .rodata          const    0x00003f08     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f0a     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f0c     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f0e     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f10     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f12     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f14     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f16     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f18     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f1a     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f1c     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f1e     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f20     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f22     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f24     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f26     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f28     0x2  os_dbg.o [1]
+  .rodata          const    0x00003f2a     0x1  os_cfg_app.o [1]
+  .rodata          const    0x00003f2b     0x1  os_cfg_app.o [1]
+  .rodata          const    0x00003f2c     0x1  os_cfg_app.o [1]
+  .rodata          const    0x00003f2d     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f2e     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f2f     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f30     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f31     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f32     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f33     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f34     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f35     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f36     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f37     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f38     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f39     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f3a     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f3b     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f3c     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f3d     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f3e     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f3f     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f40     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f41     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f42     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f43     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f44     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f45     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f46     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f47     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f48     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f49     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f4a     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f4b     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f4c     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f4d     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f4e     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f4f     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f50     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f51     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f52     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f53     0x1  os_dbg.o [1]
+  .rodata          const    0x00003f54     0x0  zero_init3.o [5]
+                          - 0x00003f54  0x3ce8
+
+"P2", part 1 of 2:                      0x1f10
+  .bss             zero     0x20000000   0x640  os_cfg_app.o [1]
+  .bss             zero     0x20000640   0x400  core_main.o [1]
+  .bss             zero     0x20000a40   0x400  lib_mem.o [1]
+  .bss             zero     0x20000e40   0x22c  bsp_int.o [1]
+  .bss             zero     0x2000106c   0x200  os_cfg_app.o [1]
+  .bss             zero     0x2000126c   0x190  os_cfg_app.o [1]
+  .bss             zero     0x200013fc   0x190  os_cfg_app.o [1]
+  .bss             zero     0x2000158c   0x190  os_cfg_app.o [1]
+  .bss             zero     0x2000171c   0x190  os_cfg_app.o [1]
+  .bss             zero     0x200018ac   0x180  os_var.o [1]
+  .bss             zero     0x20001a2c    0xb8  core_main.o [1]
+  .bss             zero     0x20001ae4    0xb8  os_var.o [1]
+  .bss             zero     0x20001b9c    0xb8  os_var.o [1]
+  .bss             zero     0x20001c54    0xb8  os_var.o [1]
+  .bss             zero     0x20001d0c    0xb8  os_var.o [1]
+  .bss             zero     0x20001dc4    0x48  lib_mem.o [1]
+  .bss             zero     0x20001e0c    0x2c  os_var.o [1]
+  .bss             zero     0x20001e38    0x10  cpu_core.o [1]
+  .bss             zero     0x20001e48     0xc  os_var.o [1]
+  .bss             zero     0x20001e54     0x8  os_var.o [1]
+  .bss             zero     0x20001e5c     0x8  os_var.o [1]
+  .bss             zero     0x20001e64     0x4  cpu_core.o [1]
+  .bss             zero     0x20001e68     0x4  lib_mem.o [1]
+  .bss             zero     0x20001e6c     0x4  os_cpu_c.o [1]
+  .bss             zero     0x20001e70     0x4  os_prio.o [1]
+  .bss             zero     0x20001e74     0x4  os_var.o [1]
+  .bss             zero     0x20001e78     0x4  os_var.o [1]
+  .bss             zero     0x20001e7c     0x4  os_var.o [1]
+  .bss             zero     0x20001e80     0x4  os_var.o [1]
+  .bss             zero     0x20001e84     0x4  os_var.o [1]
+  .bss             zero     0x20001e88     0x4  os_var.o [1]
+  .bss             zero     0x20001e8c     0x4  os_var.o [1]
+  .bss             zero     0x20001e90     0x4  os_var.o [1]
+  .bss             zero     0x20001e94     0x4  os_var.o [1]
+  .bss             zero     0x20001e98     0x4  os_var.o [1]
+  .bss             zero     0x20001e9c     0x4  os_var.o [1]
+  .bss             zero     0x20001ea0     0x4  os_var.o [1]
+  .bss             zero     0x20001ea4     0x4  os_var.o [1]
+  .bss             zero     0x20001ea8     0x4  os_var.o [1]
+  .bss             zero     0x20001eac     0x4  os_var.o [1]
+  .bss             zero     0x20001eb0     0x4  os_var.o [1]
+  .bss             zero     0x20001eb4     0x4  os_var.o [1]
+  .bss             zero     0x20001eb8     0x4  os_var.o [1]
+  .bss             zero     0x20001ebc     0x4  os_var.o [1]
+  .bss             zero     0x20001ec0     0x4  os_var.o [1]
+  .bss             zero     0x20001ec4     0x4  os_var.o [1]
+  .bss             zero     0x20001ec8     0x4  os_var.o [1]
+  .bss             zero     0x20001ecc     0x4  os_var.o [1]
+  .bss             zero     0x20001ed0     0x4  os_var.o [1]
+  .bss             zero     0x20001ed4     0x4  os_var.o [1]
+  .bss             zero     0x20001ed8     0x4  os_var.o [1]
+  .bss             zero     0x20001edc     0x4  os_var.o [1]
+  .bss             zero     0x20001ee0     0x4  os_var.o [1]
+  .bss             zero     0x20001ee4     0x4  os_var.o [1]
+  .bss             zero     0x20001ee8     0x4  os_var.o [1]
+  .bss             zero     0x20001eec     0x4  os_var.o [1]
+  .bss             zero     0x20001ef0     0x4  os_var.o [1]
+  .bss             zero     0x20001ef4     0x2  os_var.o [1]
+  .bss             zero     0x20001ef6     0x2  os_var.o [1]
+  .bss             zero     0x20001ef8     0x2  os_var.o [1]
+  .bss             zero     0x20001efa     0x2  os_var.o [1]
+  .bss             zero     0x20001efc     0x2  os_var.o [1]
+  .bss             zero     0x20001efe     0x2  os_var.o [1]
+  .bss             zero     0x20001f00     0x2  os_var.o [1]
+  .bss             zero     0x20001f02     0x2  os_var.o [1]
+  .bss             zero     0x20001f04     0x2  os_var.o [1]
+  .bss             zero     0x20001f06     0x1  os_var.o [1]
+  .bss             zero     0x20001f07     0x1  os_var.o [1]
+  .bss             zero     0x20001f08     0x1  os_var.o [1]
+  .bss             zero     0x20001f09     0x1  os_var.o [1]
+  .bss             zero     0x20001f0a     0x1  os_var.o [1]
+  .bss             zero     0x20001f0b     0x1  os_var.o [1]
+  .bss             zero     0x20001f0c     0x1  os_var.o [1]
+  .bss             zero     0x20001f0d     0x1  os_var.o [1]
+  .bss             zero     0x20001f0e     0x1  os_var.o [1]
+                          - 0x20001f0f  0x1f0f
+
+"P2", part 2 of 2:                       0x100
+  .noinit          uninit   0x20001f10   0x100  startup_ewarm.o [1]
+                          - 0x20002010   0x100
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1f0f:
+          0x20000000  0x1f0f
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj: [1]
+    bsp.o                  16
+    bsp_int.o             720               556
+    bsp_sys.o              24
+    core_main.o           214       16    1 208
+    cpu_a.o                52
+    cpu_bsp.o              68
+    cpu_core.o             76                20
+    gpio.o                410
+    led.o                  36
+    lib_mem.o             236             1 100
+    os_cfg_app.o          184      109    3 712
+    os_core.o           2 676       40
+    os_cpu_a.o            268
+    os_cpu_c.o            900                 4
+    os_dbg.o              556      345
+    os_flag.o              28
+    os_mem.o               28
+    os_msg.o              180
+    os_mutex.o          1 060
+    os_prio.o             164                 4
+    os_q.o                 28
+    os_sem.o               28
+    os_stat.o           1 368       20
+    os_task.o           2 248        8
+    os_tick.o           1 160       20
+    os_time.o             672
+    os_tmr.o              552       40
+    os_var.o                              1 347
+    startup_ewarm.o        60      620      256
+    sysctl.o              644      108
+    -------------------------------------------
+    Total:             14 656    1 326    8 207
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+m7M_tls.a: [4]
+    fpinit_M.o             34
+    -------------------------------------------
+    Total:                 34
+
+rt7M_tl.a: [5]
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    data_init.o            40
+    zero_init3.o           64
+    -------------------------------------------
+    Total:                152
+
+shb_l.a: [6]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Linker created                  16
+-----------------------------------------------
+    Grand Total:       14 870    1 342    8 207
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00003dd4          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00003de4          --   Gb  - Linker created -
+?main                   0x00003c8d         Code  Gb  cmain.o [5]
+AppStartTaskStk         0x20000640  0x400  Data  Lc  core_main.o [1]
+AppStartTaskTCB         0x20001a2c   0xb8  Data  Lc  core_main.o [1]
+AppTaskCreate           0x00003b3d    0x2  Code  Lc  core_main.o [1]
+AppTaskStart            0x00003ab5   0x78  Code  Lc  core_main.o [1]
+App_BusFault_ISR        0x00003c55    0x2  Code  Lc  startup_ewarm.o [1]
+App_Fault_ISR           0x00003c53    0x2  Code  Lc  startup_ewarm.o [1]
+App_MemFault_ISR        0x00003c59    0x2  Code  Lc  startup_ewarm.o [1]
+App_NMI_ISR             0x00003c51    0x2  Code  Lc  startup_ewarm.o [1]
+App_Reset_ISR           0x00003c21   0x28  Code  Lc  startup_ewarm.o [1]
+App_Spurious_ISR        0x00003c5b    0x2  Code  Lc  startup_ewarm.o [1]
+App_UsageFault_ISR      0x00003c57    0x2  Code  Lc  startup_ewarm.o [1]
+BSP_Init                0x00003b3f   0x10  Code  Gb  bsp.o [1]
+BSP_IntHandler          0x00003893   0x34  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerACOMP0    0x00003731    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerACOMP1    0x0000373b    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerACOMP2    0x00003745    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerADC0_0    0x000036c3    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerADC0_1    0x000036cd    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerADC0_2    0x000036d7    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerADC0_3    0x000036e1    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerADC1_0    0x000037e5    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerADC1_1    0x000037ef    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerADC1_2    0x000037f9    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerADC1_3    0x00003803    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerCAN0      0x0000379f    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerCAN1      0x000037a9    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerDummy     0x00003891    0x2  Code  Lc  bsp_int.o [1]
+BSP_IntHandlerFLASH     0x00003759    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerGPIOA     0x00003637    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerGPIOB     0x00003641    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerGPIOC     0x0000364b    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerGPIOD     0x00003655    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerGPIOE     0x0000365f    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerGPIOF     0x00003763    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerHIB       0x000037b3    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerI2C0      0x00003687    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerI2C1      0x00003795    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerI2C2      0x00003853    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerI2C3      0x0000385d    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerPWM_FAULT
+                        0x00003691    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerPWM_GEN0  0x0000369b    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerPWM_GEN1  0x000036a5    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerPWM_GEN2  0x000036af    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerPWM_GEN3  0x000037c7    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerQEI0      0x000036b9    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerSSI0      0x0000367d    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerSSI1      0x00003777    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerSSI2      0x0000380d    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerSSI3      0x00003817    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerSYS_CTRL  0x0000374f    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR0A     0x000036f5    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR0B     0x000036ff    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR1A     0x00003709    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR1B     0x00003713    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR2A     0x0000371d    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR2B     0x00003727    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR3A     0x00003781    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR3B     0x0000378b    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR4A     0x00003867    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR4B     0x00003871    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR5A     0x0000387b    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerTMR5B     0x00003885    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUART0     0x00003669    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUART1     0x00003673    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUART2     0x0000376d    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUART3     0x00003821    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUART4     0x0000382b    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUART5     0x00003835    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUART6     0x0000383f    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUART7     0x00003849    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUDAM0_ERR
+                        0x000037db    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUDMA0_SOFT
+                        0x000037d1    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerUSB_MAC   0x000037bd    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntHandlerWDTO_WDT1
+                        0x000036eb    0xa  Code  Gb  bsp_int.o [1]
+BSP_IntInit             0x0000361b   0x1c  Code  Gb  bsp_int.o [1]
+BSP_IntVectSet          0x000035fd   0x1e  Code  Gb  bsp_int.o [1]
+BSP_IntVectTbl          0x20000e40  0x22c  Data  Lc  bsp_int.o [1]
+BSP_SysClkFreqGet       0x00003239    0x8  Code  Gb  bsp_sys.o [1]
+BSP_SysInit             0x00003229    0xa  Code  Gb  bsp_sys.o [1]
+CPU_CntLeadZeros        0x00003213         Code  Gb  cpu_a.o [1]
+CPU_CntTrailZeros       0x00003219         Code  Gb  cpu_a.o [1]
+CPU_Init                0x00003241    0xc  Code  Gb  cpu_core.o [1]
+CPU_IntDis              0x000031f5         Code  Gb  cpu_a.o [1]
+CPU_IntEn               0x000031f9         Code  Gb  cpu_a.o [1]
+CPU_Name                0x20001e38   0x10  Data  Gb  cpu_core.o [1]
+CPU_NameClr             0x0000324d   0x1a  Code  Gb  cpu_core.o [1]
+CPU_NameInit            0x0000326d    0x8  Code  Lc  cpu_core.o [1]
+CPU_RevBits             0x00003223         Code  Gb  cpu_a.o [1]
+CPU_SR_Restore          0x00003205         Code  Gb  cpu_a.o [1]
+CPU_SR_Save             0x000031fd         Code  Gb  cpu_a.o [1]
+CPU_TS_Init             0x00003275    0xe  Code  Lc  cpu_core.o [1]
+CPU_TS_TmrFreqSet       0x00003267    0x6  Code  Gb  cpu_core.o [1]
+CPU_TS_TmrFreq_Hz       0x20001e64    0x4  Data  Gb  cpu_core.o [1]
+CPU_TS_TmrInit          0x00002f11   0x2e  Code  Gb  cpu_bsp.o [1]
+CPU_TS_TmrRd            0x00002f3f    0x8  Code  Gb  cpu_bsp.o [1]
+CPU_WaitForExcept       0x0000320f         Code  Gb  cpu_a.o [1]
+CPU_WaitForInt          0x0000320b         Code  Gb  cpu_a.o [1]
+GPIODirModeSet          0x000038cd   0x46  Code  Gb  gpio.o [1]
+GPIOPadConfigSet        0x00003913  0x126  Code  Gb  gpio.o [1]
+GPIOPinTypeGPIOOutputOD
+                        0x00003a45   0x22  Code  Gb  gpio.o [1]
+GPIOPinWrite            0x00003a39    0xc  Code  Gb  gpio.o [1]
+Mem_Clr                 0x0000356f   0x12  Code  Gb  lib_mem.o [1]
+Mem_Heap                0x20000a40  0x400  Data  Gb  lib_mem.o [1]
+Mem_Init                0x00003511   0x5e  Code  Gb  lib_mem.o [1]
+Mem_PoolHeap            0x20001dc4   0x48  Data  Gb  lib_mem.o [1]
+Mem_PoolTbl             0x20001e68    0x4  Data  Gb  lib_mem.o [1]
+Mem_Set                 0x00003581   0x6c  Code  Gb  lib_mem.o [1]
+OSCfg_DataSizeRAM       0x00003ef8    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_ISRStk            0x2000126c  0x190  Data  Gb  os_cfg_app.o [1]
+OSCfg_ISRStkBasePtr     0x00003ea4    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_ISRStkSize        0x00003ea8    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_ISRStkSizeRAM     0x00003eac    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStk       0x2000106c  0x200  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStkBasePtr
+                        0x00003e94    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStkLimit  0x00003e98    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStkSize   0x00003e9c    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_IdleTaskStkSizeRAM
+                        0x00003ea0    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_Init              0x00002d4d   0xb8  Code  Gb  os_cfg_app.o [1]
+OSCfg_MsgPool           0x20000000  0x640  Data  Gb  os_cfg_app.o [1]
+OSCfg_MsgPoolBasePtr    0x00003eb4    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_MsgPoolSize       0x00003a66    0x2  Data  Gb  os_cfg_app.o [1]
+OSCfg_MsgPoolSizeRAM    0x00003eb0    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskPrio      0x00003f2a    0x1  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskRate_Hz   0x00003eb8    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStk       0x200013fc  0x190  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStkBasePtr
+                        0x00003ebc    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStkLimit  0x00003ec0    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStkSize   0x00003ec4    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StatTaskStkSizeRAM
+                        0x00003ec8    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_StkSizeMin        0x00003ecc    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickRate_Hz       0x00003ed0    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskPrio      0x00003f2b    0x1  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStk       0x2000158c  0x190  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStkBasePtr
+                        0x00003ed4    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStkLimit  0x00003ed8    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStkSize   0x00003edc    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TickTaskStkSizeRAM
+                        0x00003ee0    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskPrio       0x00003f2c    0x1  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskRate_Hz    0x00003ee4    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStk        0x2000171c  0x190  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStkBasePtr
+                        0x00003ee8    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStkLimit   0x00003eec    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStkSize    0x00003ef0    0x4  Data  Gb  os_cfg_app.o [1]
+OSCfg_TmrTaskStkSizeRAM
+                        0x00003ef4    0x4  Data  Gb  os_cfg_app.o [1]
+OSCtxSw                 0x00002ea1         Code  Gb  os_cpu_a.o [1]
+OSDbg_AppHooksEn        0x00003f2f    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_ArgChkEn          0x00003f2e    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_CalledFromISRChkEn
+                        0x00003f30    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_DataSize          0x00003f04    0x4  Data  Gb  os_dbg.o [1]
+OSDbg_DbgEn             0x00003f2d    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_EndiannessTest    0x00003efc    0x4  Data  Gb  os_dbg.o [1]
+OSDbg_FlagDelEn         0x00003f32    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_FlagEn            0x00003f31    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_FlagGrp           0x00003d84   0x28  Data  Gb  os_dbg.o [1]
+OSDbg_FlagGrpSize       0x00003b4e    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_FlagModeClrEn     0x00003f33    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_FlagPendAbortEn   0x00003f34    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_FlagWidth         0x00003c8a    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_ISRPostDeferredEn
+                        0x00003f35    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_Mem               0x00003de4   0x20  Data  Gb  os_dbg.o [1]
+OSDbg_MemEn             0x00003f36    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_MemSize           0x00003caa    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_MsgEn             0x00003f37    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_MsgPoolSize       0x00003f08    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_MsgQSize          0x00003f0a    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_MsgSize           0x00003ce2    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_Mutex             0x00003d58   0x2c  Data  Gb  os_dbg.o [1]
+OSDbg_MutexDelEn        0x00003f39    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_MutexEn           0x00003f38    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_MutexPendAbortEn  0x00003f3a    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_MutexSize         0x00003f0c    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_ObjTypeChkEn      0x00003f3b    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_PendDataSize      0x00003f0e    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_PendListSize      0x00003f10    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_PendMultiEn       0x00003f3c    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_PendObjSize       0x00003f12    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_PrioMax           0x00003f14    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_PrioTblSize       0x00003f16    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_PtrSize           0x00003f18    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_Q                 0x00003cf8   0x30  Data  Gb  os_dbg.o [1]
+OSDbg_QDelEn            0x00003f3e    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_QEn               0x00003f3d    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_QFlushEn          0x00003f3f    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_QPendAbortEn      0x00003f40    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_QSize             0x00003f1a    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_RdyList           0x00003f1e    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_RdyListSize       0x00003f00    0x4  Data  Gb  os_dbg.o [1]
+OSDbg_SchedRoundRobinEn
+                        0x00003f41    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_Sem               0x00003dac   0x28  Data  Gb  os_dbg.o [1]
+OSDbg_SemDelEn          0x00003f43    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_SemEn             0x00003f42    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_SemPendAbortEn    0x00003f44    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_SemSetEn          0x00003f45    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_SemSize           0x00003f1c    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_StatTaskEn        0x00003f47    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_StatTaskStkChkEn  0x00003f48    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_StkWidth          0x00003f46    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TCBSize           0x00003f22    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_TaskChangePrioEn  0x00003f49    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TaskDelEn         0x00003f4a    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TaskProfileEn     0x00003f4d    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TaskQEn           0x00003f4b    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TaskQPendAbortEn  0x00003f4c    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TaskRegTblSize    0x00003f20    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_TaskSemPendAbortEn
+                        0x00003f4e    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TaskSuspendEn     0x00003f4f    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TickListSize      0x00003f24    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_TimeDlyHMSMEn     0x00003f50    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TimeDlyResumeEn   0x00003f51    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_Tmr               0x00003d28   0x30  Data  Gb  os_dbg.o [1]
+OSDbg_TmrDelEn          0x00003f53    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TmrEn             0x00003f52    0x1  Data  Gb  os_dbg.o [1]
+OSDbg_TmrSize           0x00003f26    0x2  Data  Gb  os_dbg.o [1]
+OSDbg_VersionNbr        0x00003f28    0x2  Data  Gb  os_dbg.o [1]
+OSFlagDbgListPtr        0x20001e94    0x4  Data  Gb  os_var.o [1]
+OSFlagQty               0x20001ef4    0x2  Data  Gb  os_var.o [1]
+OSIdleTaskCtr           0x20001e90    0x4  Data  Gb  os_var.o [1]
+OSIdleTaskHook          0x00000ce1   0x12  Code  Gb  os_cpu_c.o [1]
+OSIdleTaskTCB           0x20001ae4   0xb8  Data  Gb  os_var.o [1]
+OSInit                  0x0000026d  0x162  Code  Gb  os_core.o [1]
+OSInitHook              0x00000cf3   0x1e  Code  Gb  os_cpu_c.o [1]
+OSIntCtxSw              0x00002ea9         Code  Gb  os_cpu_a.o [1]
+OSIntEnter              0x000003cf   0x24  Code  Gb  os_core.o [1]
+OSIntExit               0x000003f3   0xb8  Code  Gb  os_core.o [1]
+OSIntNestingCtr         0x20001f06    0x1  Data  Gb  os_var.o [1]
+OSMemDbgListPtr         0x20001e98    0x4  Data  Gb  os_var.o [1]
+OSMemQty                0x20001ef6    0x2  Data  Gb  os_var.o [1]
+OSMsgPool               0x20001e48    0xc  Data  Gb  os_var.o [1]
+OSMutexCreate           0x000011f5   0x72  Code  Gb  os_mutex.o [1]
+OSMutexDbgListPtr       0x20001e9c    0x4  Data  Gb  os_var.o [1]
+OSMutexPend             0x00001267  0x21e  Code  Gb  os_mutex.o [1]
+OSMutexPost             0x00001485  0x13a  Code  Gb  os_mutex.o [1]
+OSMutexQty              0x20001ef8    0x2  Data  Gb  os_var.o [1]
+OSPrioCur               0x20001f08    0x1  Data  Gb  os_var.o [1]
+OSPrioHighRdy           0x20001f09    0x1  Data  Gb  os_var.o [1]
+OSPrioSaved             0x20001f0a    0x1  Data  Gb  os_var.o [1]
+OSPrioTbl               0x20001e70    0x4  Data  Gb  os_prio.o [1]
+OSQDbgListPtr           0x20001ea0    0x4  Data  Gb  os_var.o [1]
+OSQQty                  0x20001efa    0x2  Data  Gb  os_var.o [1]
+OSRdyList               0x200018ac  0x180  Data  Gb  os_var.o [1]
+OSRunning               0x20001f07    0x1  Data  Gb  os_var.o [1]
+OSSched                 0x000004ab   0x84  Code  Gb  os_core.o [1]
+OSSchedLock             0x0000052f   0x60  Code  Gb  os_core.o [1]
+OSSchedLockNestingCtr   0x20001f0b    0x1  Data  Gb  os_var.o [1]
+OSSchedLockTimeBegin    0x20001ea4    0x4  Data  Gb  os_var.o [1]
+OSSchedLockTimeMax      0x20001ea8    0x4  Data  Gb  os_var.o [1]
+OSSchedLockTimeMaxCur   0x20001eac    0x4  Data  Gb  os_var.o [1]
+OSSchedUnlock           0x0000058f   0x7a  Code  Gb  os_core.o [1]
+OSSemDbgListPtr         0x20001eb0    0x4  Data  Gb  os_var.o [1]
+OSSemQty                0x20001efc    0x2  Data  Gb  os_var.o [1]
+OSStart                 0x00000609   0x62  Code  Gb  os_core.o [1]
+OSStartHighRdy          0x00002e31         Code  Gb  os_cpu_a.o [1]
+OSStatReset             0x000023a1   0xf2  Code  Gb  os_stat.o [1]
+OSStatResetFlag         0x20001f0c    0x1  Data  Gb  os_var.o [1]
+OSStatTaskCPUUsage      0x20001efe    0x2  Data  Gb  os_var.o [1]
+OSStatTaskCPUUsageInit  0x00002493   0xda  Code  Gb  os_stat.o [1]
+OSStatTaskCPUUsageMax   0x20001f00    0x2  Data  Gb  os_var.o [1]
+OSStatTaskCtr           0x20001eb4    0x4  Data  Gb  os_var.o [1]
+OSStatTaskCtrMax        0x20001eb8    0x4  Data  Gb  os_var.o [1]
+OSStatTaskCtrRun        0x20001ebc    0x4  Data  Gb  os_var.o [1]
+OSStatTaskHook          0x00000d11   0x12  Code  Gb  os_cpu_c.o [1]
+OSStatTaskRdy           0x20001f0d    0x1  Data  Gb  os_var.o [1]
+OSStatTaskTCB           0x20001b9c   0xb8  Data  Gb  os_var.o [1]
+OSStatTaskTimeMax       0x20001ec0    0x4  Data  Gb  os_var.o [1]
+OSTCBCurPtr             0x20001eec    0x4  Data  Gb  os_var.o [1]
+OSTCBHighRdyPtr         0x20001ef0    0x4  Data  Gb  os_var.o [1]
+OSTaskCreate            0x00001651  0x196  Code  Gb  os_task.o [1]
+OSTaskCreateHook        0x00000d23   0x16  Code  Gb  os_cpu_c.o [1]
+OSTaskCtxSwCtr          0x20001ec4    0x4  Data  Gb  os_var.o [1]
+OSTaskDbgListPtr        0x20001ec8    0x4  Data  Gb  os_var.o [1]
+OSTaskQty               0x20001f02    0x2  Data  Gb  os_var.o [1]
+OSTaskRegNextAvailID    0x20001f0e    0x1  Data  Gb  os_var.o [1]
+OSTaskResume            0x000017e7   0x4a  Code  Gb  os_task.o [1]
+OSTaskReturnHook        0x00000d39   0x16  Code  Gb  os_cpu_c.o [1]
+OSTaskSemPend           0x00001831  0x1ca  Code  Gb  os_task.o [1]
+OSTaskSemPost           0x000019fb   0x3e  Code  Gb  os_task.o [1]
+OSTaskStkChk            0x00001a39   0xa0  Code  Gb  os_task.o [1]
+OSTaskStkInit           0x00000d4f  0x15e  Code  Gb  os_cpu_c.o [1]
+OSTaskSuspend           0x00001ad9   0x30  Code  Gb  os_task.o [1]
+OSTaskSwHook            0x00000ead   0xa6  Code  Gb  os_cpu_c.o [1]
+OSTickCtr               0x20001ecc    0x4  Data  Gb  os_var.o [1]
+OSTickListDly           0x20001e54    0x8  Data  Gb  os_var.o [1]
+OSTickListTimeout       0x20001e5c    0x8  Data  Gb  os_var.o [1]
+OSTickTaskTCB           0x20001c54   0xb8  Data  Gb  os_var.o [1]
+OSTickTaskTimeMax       0x20001ed0    0x4  Data  Gb  os_var.o [1]
+OSTimeDly               0x00002f55   0x90  Code  Gb  os_time.o [1]
+OSTimeDlyHMSM           0x00002fe5  0x1ba  Code  Gb  os_time.o [1]
+OSTimeTick              0x0000319f   0x36  Code  Gb  os_time.o [1]
+OSTimeTickHook          0x00000f53   0x12  Code  Gb  os_cpu_c.o [1]
+OSTmrDbgListPtr         0x20001ed4    0x4  Data  Gb  os_var.o [1]
+OSTmrListEntries        0x20001f04    0x2  Data  Gb  os_var.o [1]
+OSTmrListPtr            0x20001ed8    0x4  Data  Gb  os_var.o [1]
+OSTmrMutex              0x20001e0c   0x2c  Data  Gb  os_var.o [1]
+OSTmrTaskTCB            0x20001d0c   0xb8  Data  Gb  os_var.o [1]
+OSTmrTaskTimeMax        0x20001edc    0x4  Data  Gb  os_var.o [1]
+OSTmrTickCtr            0x20001ee0    0x4  Data  Gb  os_var.o [1]
+OSTmrUpdateCnt          0x20001ee4    0x4  Data  Gb  os_var.o [1]
+OSTmrUpdateCtr          0x20001ee8    0x4  Data  Gb  os_var.o [1]
+OS_AppIdleTaskHookPtr   0x20001e80    0x4  Data  Gb  os_var.o [1]
+OS_AppStatTaskHookPtr   0x20001e84    0x4  Data  Gb  os_var.o [1]
+OS_AppTaskCreateHookPtr
+                        0x20001e74    0x4  Data  Gb  os_var.o [1]
+OS_AppTaskDelHookPtr    0x20001e78    0x4  Data  Gb  os_var.o [1]
+OS_AppTaskReturnHookPtr
+                        0x20001e7c    0x4  Data  Gb  os_var.o [1]
+OS_AppTaskSwHookPtr     0x20001e88    0x4  Data  Gb  os_var.o [1]
+OS_AppTimeTickHookPtr   0x20001e8c    0x4  Data  Gb  os_var.o [1]
+OS_CPU_ExceptStkBase    0x20001e6c    0x4  Data  Gb  os_cpu_c.o [1]
+OS_CPU_FP_Reg_Pop       0x00002e1f         Code  Gb  os_cpu_a.o [1]
+OS_CPU_FP_Reg_Push      0x00002e05         Code  Gb  os_cpu_a.o [1]
+OS_CPU_PendSVHandler    0x00002eb1         Code  Gb  os_cpu_a.o [1]
+OS_CPU_SysTickHandler   0x00000f65   0x24  Code  Gb  os_cpu_c.o [1]
+OS_CPU_SysTickInit      0x00000f89   0x2e  Code  Gb  os_cpu_c.o [1]
+OS_Dbg_Init             0x00002b21  0x22c  Code  Gb  os_dbg.o [1]
+OS_FlagInit             0x00001109   0x12  Code  Gb  os_flag.o [1]
+OS_IdleTask             0x0000066b   0x36  Code  Gb  os_core.o [1]
+OS_IdleTaskInit         0x000006a1   0x52  Code  Gb  os_core.o [1]
+OS_MemInit              0x00001125   0x12  Code  Gb  os_mem.o [1]
+OS_MsgPoolInit          0x00001141   0x92  Code  Gb  os_msg.o [1]
+OS_MsgQInit             0x000011d3   0x14  Code  Gb  os_msg.o [1]
+OS_MutexDbgListAdd      0x000015bf   0x28  Code  Gb  os_mutex.o [1]
+OS_MutexInit            0x000015e7   0x12  Code  Gb  os_mutex.o [1]
+OS_Pend                 0x000006f3   0x76  Code  Gb  os_core.o [1]
+OS_PendDataInit         0x00000769   0x3a  Code  Gb  os_core.o [1]
+OS_PendDbgNameAdd       0x000007a3   0x4c  Code  Gb  os_core.o [1]
+OS_PendDbgNameRemove    0x000007ef   0x28  Code  Gb  os_core.o [1]
+OS_PendListChangePrio   0x0000081d   0x46  Code  Gb  os_core.o [1]
+OS_PendListInit         0x00000863    0xe  Code  Gb  os_core.o [1]
+OS_PendListInsertPrio   0x00000871   0x7e  Code  Gb  os_core.o [1]
+OS_PendListRemove       0x000008ef   0x38  Code  Gb  os_core.o [1]
+OS_PendListRemove1      0x00000927   0x54  Code  Gb  os_core.o [1]
+OS_Post                 0x0000097b   0xf2  Code  Gb  os_core.o [1]
+OS_Post1                0x00000a6d   0x2c  Code  Gb  os_core.o [1]
+OS_PrioGetHighest       0x0000107b   0x26  Code  Gb  os_prio.o [1]
+OS_PrioInit             0x00001065   0x16  Code  Gb  os_prio.o [1]
+OS_PrioInsert           0x000010a1   0x32  Code  Gb  os_prio.o [1]
+OS_PrioRemove           0x000010d3   0x32  Code  Gb  os_prio.o [1]
+OS_QInit                0x00001619   0x12  Code  Gb  os_q.o [1]
+OS_RdyListInit          0x00000a99   0x2a  Code  Gb  os_core.o [1]
+OS_RdyListInsert        0x00000ac3   0x28  Code  Gb  os_core.o [1]
+OS_RdyListInsertHead    0x00000aeb   0x44  Code  Gb  os_core.o [1]
+OS_RdyListInsertTail    0x00000b2f   0x42  Code  Gb  os_core.o [1]
+OS_RdyListRemove        0x00000b9d   0x64  Code  Gb  os_core.o [1]
+OS_SchedLockTimeMeasStart
+                        0x00000c0d   0x14  Code  Gb  os_core.o [1]
+OS_SchedLockTimeMeasStop
+                        0x00000c39   0x30  Code  Gb  os_core.o [1]
+OS_SemInit              0x00001635   0x12  Code  Gb  os_sem.o [1]
+OS_StatTask             0x0000256d  0x284  Code  Gb  os_stat.o [1]
+OS_StatTaskInit         0x000027f1   0x92  Code  Gb  os_stat.o [1]
+OS_TaskBlock            0x00000c6d   0x2a  Code  Gb  os_core.o [1]
+OS_TaskDbgListAdd       0x00001b09   0x34  Code  Gb  os_task.o [1]
+OS_TaskInit             0x00001b3d   0x1e  Code  Gb  os_task.o [1]
+OS_TaskInitTCB          0x00001b5b  0x110  Code  Gb  os_task.o [1]
+OS_TaskResume           0x00001c71   0xcc  Code  Gb  os_task.o [1]
+OS_TaskReturn           0x00001d3d   0x18  Code  Gb  os_task.o [1]
+OS_TaskSemPost          0x00001d5d   0xd0  Code  Gb  os_task.o [1]
+OS_TaskSuspend          0x00001e35   0xc6  Code  Gb  os_task.o [1]
+OS_TickListInsert       0x0000203d   0x92  Code  Gb  os_tick.o [1]
+OS_TickListInsertDly    0x000020cf   0xc2  Code  Gb  os_tick.o [1]
+OS_TickListRemove       0x00002191   0x76  Code  Gb  os_tick.o [1]
+OS_TickListResetPeak    0x00002207    0x2  Code  Gb  os_tick.o [1]
+OS_TickListUpdateDly    0x00002209   0x8e  Code  Lc  os_tick.o [1]
+OS_TickListUpdateTimeout
+                        0x00002297   0xd2  Code  Lc  os_tick.o [1]
+OS_TickTask             0x00001f19   0x62  Code  Gb  os_tick.o [1]
+OS_TickTaskInit         0x00001f7b   0xc2  Code  Gb  os_tick.o [1]
+OS_TmrInit              0x000028f9   0xd4  Code  Gb  os_tmr.o [1]
+OS_TmrLock              0x00002ab3   0x16  Code  Lc  os_tmr.o [1]
+OS_TmrResetPeak         0x000029cd    0x2  Code  Gb  os_tmr.o [1]
+OS_TmrTask              0x00002a19   0x9a  Code  Gb  os_tmr.o [1]
+OS_TmrUnlink            0x000029cf   0x48  Code  Gb  os_tmr.o [1]
+OS_TmrUnlock            0x00002ac9   0x10  Code  Lc  os_tmr.o [1]
+Region$$Table$$Base     0x00003dd4          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00003de4          --   Gb  - Linker created -
+SysCtlClockGet          0x000033e1   0xf0  Code  Gb  sysctl.o [1]
+SysCtlClockSet          0x000032b5  0x12c  Code  Gb  sysctl.o [1]
+SysCtlDelay             0x000032ad    0x8  Code  Gb  sysctl.o [1]
+SysCtlPeripheralEnable  0x0000328d   0x1e  Code  Gb  sysctl.o [1]
+__cmain                 0x00003c8d         Code  Gb  cmain.o [5]
+__exit                  0x00003ce5   0x14  Code  Gb  exit.o [6]
+__iar_data_init3        0x00003cad   0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x00003c69         Code  Gb  fpinit_M.o [4]
+__iar_program_start     0x00003c5d         Code  Gb  cstartup_M.o [5]
+__iar_systems$$module {Abs}
+                        0x00000001         Data  Gb  command line/config [2]
+__iar_zero_init3        0x00003be1   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00003ca7    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000  0x26c  Data  Gb  startup_ewarm.o [1]
+_call_main              0x00003c99         Code  Gb  cmain.o [5]
+_exit                   0x00003cd9         Code  Gb  cexit.o [5]
+_main                   0x00003ca3         Code  Gb  cmain.o [5]
+exit                    0x00003cd5    0x4  Code  Gb  exit.o [3]
+g_pui32Xtals            0x00003b74   0x6c  Data  Lc  sysctl.o [1]
+led_init                0x00003b51   0x24  Code  Gb  led.o [1]
+main                    0x00003a69   0x4a  Code  Gb  core_main.o [1]
+pui32Stack              0x20001f10  0x100  Data  Lc  startup_ewarm.o [1]
+
+
+[1] = C:\Users\bicbrv\Desktop\ucOS3_TM4C123\Project_Files\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  14 870 bytes of readonly  code memory
+   1 342 bytes of readonly  data memory
+   8 207 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
