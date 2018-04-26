@@ -18,7 +18,7 @@
 #include "KS103.h"
 
 float x1,y1;
-// Ö»ÔÚµ±Ç°ÎÄ¼þÓÃµ½
+// åªåœ¨å½“å‰æ–‡ä»¶ç”¨åˆ°
 static float px4_sumx=0,px4_sumy=0;
 FLOW flow;
 FLOW_RAD flow_rad;
@@ -30,10 +30,10 @@ uint64 flow_buf_rad[45];
 
 float last_roll=0;
 float last_pitch=0;
-//¹âÁ÷Êä³ö¸øPIDµ÷½ÚµÄÖµ
+//å…‰æµè¾“å‡ºç»™PIDè°ƒèŠ‚çš„å€¼
 float SumX=0;
 float SumY=0;
-//·É»úµ±Ç°×ø±ê
+//é£žæœºå½“å‰åæ ‡
 float global_x=0,global_y=0;
 
 
@@ -60,10 +60,10 @@ void PX4Flow_uart_init(uint32 band,void (*pfnHandler)(void))
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
   SysCtlPeripheralEnable(SYSCTL_PERIPH_UART6);
   
-  GPIOPinConfigure(GPIO_PD4_U6RX);                    //ÅäÖÃÊä³öÒý½Å    PB1=usb1Rx
+  GPIOPinConfigure(GPIO_PD4_U6RX);                    //é…ç½®è¾“å‡ºå¼•è„š    PB1=usb1Rx
   GPIOPinTypeUART(GPIO_PORTD_BASE, GPIO_PIN_4);
   
-  GPIOPinConfigure(GPIO_PD5_U6TX);                     //ÅäÖÃÊä³öÒý½Å    PB1=usb1Rx ,PB2=usb1TX
+  GPIOPinConfigure(GPIO_PD5_U6TX);                     //é…ç½®è¾“å‡ºå¼•è„š    PB1=usb1Rx ,PB2=usb1TX
   GPIOPinTypeUART(GPIO_PORTD_BASE, GPIO_PIN_5);
   
   IntRegister(INT_UART6,pfnHandler);  
@@ -168,7 +168,7 @@ void FLOW_MAVLINK(unsigned char data)
       //x=flow_fix.flow_comp_x.originf;
       //y= flow_fix.flow_comp_y.originf;
       
-      x1 = flow_rad.integrated_x;// - flow_rad.integrated_xgyro;   //½Ç¶ÈÐÞÕý
+      x1 = flow_rad.integrated_x;// - flow_rad.integrated_xgyro;   //è§’åº¦ä¿®æ­£
       y1 = flow_rad.integrated_y;// - flow_rad.integrated_ygyro;
       px4_sumx+=flow_rad.integrated_x*1000;
       px4_sumy+=flow_rad.integrated_y*1000; 
@@ -192,9 +192,9 @@ void px4_data_fix(void)
   //unsigned char move=0;
   //move=ADNS3080_Data_Buffer[0];
   
-  y_mm =(float)px4_sumy- (diff_roll * radians_to_pixels_y);   //µ¥Î»ÊÇÏñËØ      //float radians_to_pixels_x = 15.6; radians_to_pixels_y = 15.6;
+  y_mm =(float)px4_sumy- (diff_roll * radians_to_pixels_y);   //å•ä½æ˜¯åƒç´       //float radians_to_pixels_x = 15.6; radians_to_pixels_y = 15.6;
   x_mm =(float)px4_sumx- (diff_pitch * radians_to_pixels_x);                    //float px4_sumx=0,px4_sumy=0;
-  High_Now = ks103_distance;   //µ¥Î»ÊÇºÁÃ×
+  High_Now = ks103_distance;   //å•ä½æ˜¯æ¯«ç±³
   if(High_Now-High_Now_before>1000 || High_Now_before-High_Now<-1000)           //::note::large delta height
   {
     High_Now=High_Now_before;
@@ -204,19 +204,19 @@ void px4_data_fix(void)
     High_Now=0; 
   }
   
-  y_mm=y_mm*High_Now * conv_factor;   //µ¥Î»ÊÇmm  //×î¼Ñ¸ß¶ÈÊÇ50-60cm           //float conv_factor =  0.0010f init
+  y_mm=y_mm*High_Now * conv_factor;   //å•ä½æ˜¯mm  //æœ€ä½³é«˜åº¦æ˜¯50-60cm           //float conv_factor =  0.0010f init
   x_mm=x_mm*High_Now * conv_factor;
   
-////¹âÁ÷Êä³ö¸øPIDµ÷½ÚµÄÖµ
+////å…‰æµè¾“å‡ºç»™PIDè°ƒèŠ‚çš„å€¼
 //float SumX=0;
 //float SumY=0;
-////·É»úµ±Ç°×ø±ê
+////é£žæœºå½“å‰åæ ‡
 //float global_x=0,global_y=0;  
   
   if(High_Now/10>=20)
   {
     //SumX=SumX+x_mm;     
-    //SumY=SumY+y_mm;	2017.7.13¸Ä¶¯£¬Òò¹âÁ÷Êý¾ÝÎÊÌâ£¨ÒÆ¶¯40cmÖ»ÓÐ30cmµÄÊý¾Ý£©£¬½«Ã¿´ÎµÄÎ»ÒÆ¶¼³ËÒÔ3/4.
+    //SumY=SumY+y_mm;	2017.7.13æ”¹åŠ¨ï¼Œå› å…‰æµæ•°æ®é—®é¢˜ï¼ˆç§»åŠ¨40cmåªæœ‰30cmçš„æ•°æ®ï¼‰ï¼Œå°†æ¯æ¬¡çš„ä½ç§»éƒ½ä¹˜ä»¥3/4.
     SumX=SumX+3*x_mm/5;     
     SumY=SumY+3*y_mm/5;   
     
